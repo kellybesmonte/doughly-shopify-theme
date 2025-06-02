@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This file contains a list of files and folders to be ignored when
 # committing to a git repository.  Ignored files are both Slate project
 # specific files as well as commonly ignored files on any project.
@@ -45,6 +46,8 @@ npm-debug.log
 *.sql
 *.sqlite
 
+=======
+>>>>>>> 152b42a5aa840325879f9d6113da8c8a97bea8ae
 # OS generated files #
 ######################
 .DS_Store
@@ -54,6 +57,7 @@ npm-debug.log
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 
 # Custom #
 ######################
@@ -65,3 +69,13 @@ _site
 secrets.json
 .jekyll-metadata
 .ruby-version
+=======
+node_modules/
+
+# Shopify CLI files
+.shopify/
+
+## Release files
+release
+*.zip
+>>>>>>> 152b42a5aa840325879f9d6113da8c8a97bea8ae
