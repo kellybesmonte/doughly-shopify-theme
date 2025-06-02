@@ -1,13 +1,20 @@
 <header>
-  <h2 class="header__title">
-    {{ shop.name | link_to: routes.root_url }}
-  </h2>
+  <a href="{{ routes.root_url }}" class="header__logo">
+    <img src="{{ 'Logo.png' | asset_url }}" alt="{{ shop.name }}" class="logo-image" />
+  </a>
 
   <div class="header__menu">
     {% for link in section.settings.menu.links %}
       {{ link.title | link_to: link.url }}
     {% endfor %}
   </div>
+
+  <div class="header__menu">
+      {% for link in section.settings.menu.links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+   </div>
+
 
   <div class="header__icons">
     {% if shop.customer_accounts_enabled %}
@@ -25,6 +32,12 @@
 </header>
 
 {% stylesheet %}
+
+.logo-image {
+  max-height: 60px;
+  width: auto;
+}
+
   header {
     height: 5rem;
     display: flex;
